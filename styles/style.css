@@ -1,0 +1,145 @@
+/*Creator: Tarrayna Smith
+Date: 12/11/2021
+File Name: style.css*/
+
+/****************
+Mobile Viewport
+*****************/
+
+/*Disable Tablet and Desktop*/
+.tablet-nav{
+    display: none;
+}
+
+/*Nav Styles*/
+#nav-links{
+    display: none;
+}
+.mobile-nav a{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    background: black;
+}
+
+/*Body Styles*/
+body, html {
+    height: 100%;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #273043, #272727);
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/1594237771-kd-wallpaper-1/KD-Wallpaper-1/kingdom-death-wallpaper-1-3360x1050.jpg");
+
+    /* Set a specific height */
+    height: 15%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    font-size: .75em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space: nowrap
+}
+
+/*Hamburger Style*/
+#hamburger{
+    /*position: absolute;*/
+    color: white;
+    size: 2em;
+
+    font-size: 40px;
+    padding-top: 5px;
+    transition: .2s ease;
+}
+
+/*Footer Style*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #272727;
+}
+/****************
+Tablet Viewport
+*****************/
+@media screen and (min-width: 620px), print {
+
+    /*Disable Mobile View*/
+    .mobile-nav{
+        display: none;
+        text-align: center;
+    }
+
+    /*Enable Tablet View*/
+    .tablet-nav{
+        display: block;
+        text-align: center;
+    }
+
+    /*Tablet View Nav Styles*/
+    #tablet-links a{
+        color: #e7ecef;
+        font-size: 1.5em;
+        padding: 0 1em;
+    }
+
+    #tablet-links a:hover{
+        color: #e7ecef;
+        text-shadow: 2px 2px #521016;
+    }
+
+    /*Adjust for tablets*/
+    .hero-image {
+        /* Set a specific height */
+        height: 15%;
+    }
+
+    .hero-text{
+        font-size: 1.75em;
+        white-space: nowrap
+    }
+
+}
+
+
+/****************
+Desktop Viewport
+*****************/
+@media screen and (min-width: 1000px), print {
+
+
+
+
+}
+
+
+
+/****************
+Print Viewport
+*****************/
+@media print {
+
+
+
+
+}
